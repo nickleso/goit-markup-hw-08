@@ -2,9 +2,24 @@
 
 /* portfolio buttons (filter)*/
 .portfolio-buttons {
-  @extend %centredFlex;
+  display: flex;
 
-  margin-bottom: 50px;
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+
+    gap: 15px 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 
   &__item:not(:last-child) {
     margin-right: 8px;

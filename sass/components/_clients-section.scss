@@ -2,13 +2,31 @@
 .clients-list {
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
 }
 
 .clients-list__link {
-  @extend %centredFlex;
-
-  width: 170px;
+  width: 210px;
   height: 92px;
+
+  @media screen and (min-width: 480px) {
+    width: 210px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+
+  @extend %centredFlex;
 
   border: 1px solid #afb1b8;
   border-radius: 4px;

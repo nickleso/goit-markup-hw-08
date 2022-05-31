@@ -325,58 +325,60 @@
     <!--footer-->
     <footer class="footer">
       <div class="container footer__container">
-        <!--Контакты-->
-        <div class="footer__contacts">
-          <a href="./index.html" class="logo footer__logo"
-            >Web<span class="logo__secondary logo__secondary--white-theme">Studio</span>
-          </a>
+        <div class="footer__wrapper">
+          <!--Контакты-->
+          <div class="footer__contacts">
+            <a href="./index.html" class="logo footer__logo"
+              >Web<span class="logo__secondary logo__secondary--white-theme">Studio</span>
+            </a>
 
-          <address class="address">
-            <ul class="address__list list">
-              <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
-              <li class="address__item">
-                <a href="mailto:info@example.com" class="address__link">info@example.com</a>
+            <address class="address">
+              <ul class="address__list list">
+                <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
+                <li class="address__item">
+                  <a href="mailto:info@example.com" class="address__link">info@example.com</a>
+                </li>
+                <li class="address__item">
+                  <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <!-- Присоединяйтесь -->
+          <div class="join">
+            <b class="join__call">присоединяйтесь</b>
+            <ul class="join-list list">
+              <li class="join-list__item">
+                <a href="https://www.instagram.com" class="join-list__link" aria-label="instagram"
+                  ><svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+              <li class="join-list__item">
+                <a href="https://twitter.com" class="join-list__link" aria-label="twitter"
+                  ><svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-list__item">
+                <a href="https://www.facebook.com" class="join-list__link" aria-label="facebook"
+                  ><svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-list__item">
+                <a href="https://www.linkedin.com" class="join-list__link" aria-label="linkedin"
+                  ><svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <!-- Присоединяйтесь -->
-        <div class="join">
-          <b class="join__call">присоединяйтесь</b>
-          <ul class="join-list list">
-            <li class="join-list__item">
-              <a href="https://www.instagram.com" class="join-list__link" aria-label="instagram"
-                ><svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a href="https://twitter.com" class="join-list__link" aria-label="twitter"
-                ><svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a href="https://www.facebook.com" class="join-list__link" aria-label="facebook"
-                ><svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a href="https://www.linkedin.com" class="join-list__link" aria-label="linkedin"
-                ><svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <!-- Подпишитесь на рассылку -->
@@ -404,5 +406,6 @@
 
     <!-- scripts -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

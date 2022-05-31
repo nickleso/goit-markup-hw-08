@@ -65,75 +65,83 @@
     <main>
       <!--Герой-->
       <section class="hero overlay">
-        <h1 class="hero__title">
-          Эффективные решения<br />
-          для вашего бизнеса
-        </h1>
-        <button type="button" class="main-button" data-modal-open>Заказать услугу</button>
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button type="button" class="modal__close-btn" aria-label="Закрыть" data-modal-close>
-              <svg width="11px" height="11px">
-                <use href="./images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
-            <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
-            <form class="modal-form">
-              <div class="form-field">
-                <label for="name" class="form-field__label">Имя</label>
-                <input class="form-field__input" type="text" name="username" id="name" />
-                <svg class="form-field__icon" width="18px" height="18px">
-                  <use href="./images/icons.svg#icon-person-modal"></use>
+        <div class="container">
+          <h1 class="hero__title">
+            Эффективные решения<br />
+            для вашего бизнеса
+          </h1>
+          <button type="button" class="main-button" data-modal-open>Заказать услугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button type="button" class="modal__close-btn" aria-label="Закрыть" data-modal-close>
+                <svg width="11px" height="11px">
+                  <use href="./images/icons.svg#icon-close"></use>
                 </svg>
-              </div>
+              </button>
+              <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+              <form class="modal-form">
+                <div class="form-field">
+                  <label for="name" class="form-field__label">Имя</label>
+                  <input class="form-field__input" type="text" name="username" id="name" />
+                  <svg class="form-field__icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-person-modal"></use>
+                  </svg>
+                </div>
 
-              <div class="form-field">
-                <label for="tel" class="form-field__label">Телефон</label>
-                <input class="form-field__input" type="tel" name="tel" id="tel" autocomplete="on" />
-                <svg class="form-field__icon" width="18px" height="18px">
-                  <use href="./images/icons.svg#icon-phone-modal"></use>
-                </svg>
-              </div>
+                <div class="form-field">
+                  <label for="tel" class="form-field__label">Телефон</label>
+                  <input
+                    class="form-field__input"
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    autocomplete="on"
+                  />
+                  <svg class="form-field__icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-phone-modal"></use>
+                  </svg>
+                </div>
 
-              <div class="form-field">
-                <label for="email" class="form-field__label">Почта</label>
-                <input
-                  class="form-field__input"
-                  type="email"
-                  name="email"
-                  id="email"
-                  autocomplete="on"
-                />
-                <svg class="form-field__icon" width="18px" height="18px">
-                  <use href="./images/icons.svg#icon-email-modal"></use>
-                </svg>
-              </div>
+                <div class="form-field">
+                  <label for="email" class="form-field__label">Почта</label>
+                  <input
+                    class="form-field__input"
+                    type="email"
+                    name="email"
+                    id="email"
+                    autocomplete="on"
+                  />
+                  <svg class="form-field__icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-email-modal"></use>
+                  </svg>
+                </div>
 
-              <div class="textarea-field">
-                <label for="comment" class="textarea-field__label">Комментарий</label>
-                <textarea
-                  class="textarea-field__input"
-                  name="comment"
-                  id="comment"
-                  rows="7"
-                  autocomplete="off"
-                  placeholder="Введите текст"
-                ></textarea>
-              </div>
+                <div class="textarea-field">
+                  <label for="comment" class="textarea-field__label">Комментарий</label>
+                  <textarea
+                    class="textarea-field__input"
+                    name="comment"
+                    id="comment"
+                    rows="7"
+                    autocomplete="off"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </div>
 
-              <label class="policy">
-                <input class="policy__input hidden" type="checkbox" name="policy" />
-                <span class="policy__checkbox"></span>
-                <span class="policy__title"
-                  >Соглашаюсь с рассылкой и принимаю
-                  <a href="./index.html" class="policy__link" aria-label="Условия договора">
-                    Условия договора</a
-                  ></span
-                >
-              </label>
+                <label class="policy">
+                  <input class="policy__input hidden" type="checkbox" name="policy" />
+                  <span class="policy__checkbox"></span>
+                  <span class="policy__title"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a href="./index.html" class="policy__link" aria-label="Условия договора">
+                      Условия договора</a
+                    ></span
+                  >
+                </label>
 
-              <button type="submit" class="main-button" aria-label="Отправить">Отправить</button>
-            </form>
+                <button type="submit" class="main-button" aria-label="Отправить">Отправить</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -514,58 +522,60 @@
     <!--footer-->
     <footer class="footer">
       <div class="container footer__container">
-        <!--Контакты-->
-        <div class="footer__contacts">
-          <a href="./index.html" class="logo footer__logo"
-            >Web<span class="logo__secondary logo__secondary--white-theme">Studio</span>
-          </a>
+        <div class="footer__wrapper">
+          <!--Контакты-->
+          <div class="footer__contacts">
+            <a href="./index.html" class="logo footer__logo"
+              >Web<span class="logo__secondary logo__secondary--white-theme">Studio</span>
+            </a>
 
-          <address class="address">
-            <ul class="address__list list">
-              <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
-              <li class="address__item">
-                <a href="mailto:info@example.com" class="address__link">info@example.com</a>
+            <address class="address">
+              <ul class="address__list list">
+                <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
+                <li class="address__item">
+                  <a href="mailto:info@example.com" class="address__link">info@example.com</a>
+                </li>
+                <li class="address__item">
+                  <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <!-- Присоединяйтесь -->
+          <div class="join">
+            <b class="join__call">присоединяйтесь</b>
+            <ul class="join-list list">
+              <li class="join-list__item">
+                <a href="https://www.instagram.com" class="join-list__link" aria-label="instagram"
+                  ><svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+              <li class="join-list__item">
+                <a href="https://twitter.com" class="join-list__link" aria-label="twitter"
+                  ><svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-list__item">
+                <a href="https://www.facebook.com" class="join-list__link" aria-label="facebook"
+                  ><svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-list__item">
+                <a href="https://www.linkedin.com" class="join-list__link" aria-label="linkedin"
+                  ><svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <!-- Присоединяйтесь -->
-        <div class="join">
-          <b class="join__call">присоединяйтесь</b>
-          <ul class="join-list list">
-            <li class="join-list__item">
-              <a href="https://www.instagram.com" class="join-list__link" aria-label="instagram"
-                ><svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a href="https://twitter.com" class="join-list__link" aria-label="twitter"
-                ><svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a href="https://www.facebook.com" class="join-list__link" aria-label="facebook"
-                ><svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-list__item">
-              <a href="https://www.linkedin.com" class="join-list__link" aria-label="linkedin"
-                ><svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <!-- Подпишитесь на рассылку -->
@@ -593,5 +603,6 @@
 
     <!-- scripts -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

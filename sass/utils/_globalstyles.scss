@@ -18,15 +18,24 @@ img {
 
 /* utils */
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   background-color: var(--primary-bcg-color);
 }
 
 .section__heading {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 
   font-weight: 700;
   font-size: 36px;
@@ -37,11 +46,22 @@ img {
 
 .container {
   /* outline: 2px solid tomato; */
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .hidden {
