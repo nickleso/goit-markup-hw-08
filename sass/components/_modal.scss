@@ -1,0 +1,219 @@
+/* modal window "Заказать услугу" */
+.backdrop {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 1;
+  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+  background-color: rgba(0, 0, 0, 0.2);
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+/* modal form */
+.modal {
+  z-index: 20;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 528px;
+  min-height: 581px;
+  padding: 40px;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms var(--timing-function);
+
+  background-color: var(--primary-bcg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+  }
+}
+
+.modal__close-btn {
+  @extend %centredFlex;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  background-color: var(--primary-bcg-color);
+
+  cursor: pointer;
+
+  transition: fill 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-field {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+
+  &__label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: var(--nav-color);
+  }
+}
+
+.form-field__input {
+  width: 100%;
+  height: 40px;
+  padding: 11px 42px;
+
+  outline: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+    fill: var(--accent-color);
+  }
+}
+
+.form-field__icon {
+  position: absolute;
+  top: 29px;
+  left: 12px;
+  transition: fill 250ms var(--timing-function);
+
+  pointer-events: none;
+}
+
+.form-field__input:hover + .form-field__icon,
+.form-field__input:focus + .form-field__icon {
+  fill: var(--accent-color);
+}
+
+.textarea-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+
+  &__label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: var(--nav-color);
+  }
+}
+
+.textarea-field__input {
+  padding: 12px 16px;
+  width: 100%;
+
+  resize: none;
+  outline: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+  }
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+/* policy checkbox */
+.policy {
+  @extend %centredFlex;
+
+  margin-bottom: 30px;
+
+  &__title {
+    line-height: 1.71;
+    color: var(--nav-color);
+  }
+
+  &__link {
+    line-height: 1.71;
+
+    text-decoration-line: underline;
+    color: var(--accent-color);
+  }
+}
+
+.policy__checkbox {
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+
+  transition: border 250ms var(--timing-function), background-color 250ms var(--timing-function);
+}
+
+.policy__input:focus + .policy__checkbox,
+.policy__input:hover + .policy__checkbox {
+  border-color: var(--accent-color);
+}
+
+.policy__input:checked + .policy__checkbox {
+  background-image: url(../images/icon-check.svg);
+  background-color: var(--accent-color);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: transparent;
+}

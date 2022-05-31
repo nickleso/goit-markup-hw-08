@@ -1,0 +1,78 @@
+/* team section */
+.our-team {
+  background-color: var(--section-bcg-color);
+}
+
+.team-list {
+  display: flex;
+
+  &_item {
+    width: 270px;
+    margin-right: 30px;
+
+    background-color: var(--primary-bcg-color);
+
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &_item:last-child {
+    margin-right: 0;
+  }
+}
+
+.team-card {
+  padding: 30px 0;
+
+  &__title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    color: var(--text-color);
+
+    font-size: 16px;
+    line-height: 1.19;
+
+    text-align: center;
+  }
+}
+
+.network-list {
+  @extend %centredFlex;
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.network-list__link {
+  @extend %centredFlex;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  background-color: var (--primary-bcg-color);
+  fill: var(--networksvg-color);
+
+  transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--address-color);
+  }
+}

@@ -1,0 +1,24 @@
+/* base */
+:root {
+  /* text colors */
+  --primary-text-color: #212121;
+  --text-color: #757575;
+  --logo-color: #2196f3;
+  --accent-color: #2196f3;
+  --nav-color: #757575;
+  --address-color: #ffffff;
+  --contacts-color: rgba(255, 255, 255, 0.6);
+  --networksvg-color: #afb1b8;
+
+  /* background colors */
+  --primary-bcg-color: #ffffff;
+  --hero-bcg-color: #c4c4c4;
+  --footer-bcg-color: #2f303a;
+  --section-bcg-color: #f5f4fa;
+  --herohover-bcg-color: #188ce8;
+
+  --outline: 1px solid tomato;
+
+  /* cubic-bizier */
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
