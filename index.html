@@ -23,41 +23,100 @@
     <header class="header">
       <div class="container header__container">
         <a href="./index.html" class="logo"
-          >Web<span class="logo__secondary logo__secondary--dark-theme">Studio</span>
+          >Web<span class="logo__secondary--dark-theme">Studio</span>
         </a>
+        <button
+          type="button"
+          class="mobile-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="mobile-button__icon-menu" href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
 
-        <nav class="site-nav">
-          <ul class="site-nav__list list">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link site-nav__link--active-page">Студия</a>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button
+            type="button"
+            class="mobile-button js-close-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use
+                class="mobile-button__icon-close"
+                href="./images/icons.svg#icon-burger-close"
+              ></use>
+            </svg>
+          </button>
+          <nav class="site-nav">
+            <ul class="site-nav__list list">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link site-nav__link--active-page">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="contact-list list">
+            <li class="contact-list__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contact-list__link contact-list__link--mail"
+                ><svg class="contact-list__icon" width="16px" height="12px">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="" class="site-nav__link">Контакты</a>
+            <li class="contact-list__item">
+              <a href="tel:+380961111111" class="contact-list__link contact-list__link--mobile">
+                <svg class="contact-list__icon" width="10px" height="16px">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
 
-        <ul class="contact-list list">
-          <li class="contact-list__item">
-            <a href="mailto:info@devstudio.com" class="contact-list__link"
-              ><svg class="contact-list__icon" width="16px" height="12px">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contact-list__item">
-            <a href="tel:+380961111111" class="contact-list__link">
-              <svg class="contact-list__icon" width="10px" height="16px">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="social-list list">
+            <li class="social-list__item">
+              <a href="https://www.instagram.com" class="social-list__link" aria-label="instagram"
+                >Instagram
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a
+                href="https://twitter.com"
+                class="social-list__link social-list__link--mark"
+                aria-label="twitter"
+                >Twitter
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a
+                href="https://www.facebook.com"
+                class="social-list__link social-list__link--mark"
+                aria-label="facebook"
+                >Facebook
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a
+                href="https://www.linkedin.com"
+                class="social-list__link social-list__link--mark"
+                aria-label="linkedin"
+                >LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -131,11 +190,9 @@
                 <label class="policy">
                   <input class="policy__input hidden" type="checkbox" name="policy" />
                   <span class="policy__checkbox"></span>
-                  <span class="policy__title"
-                    >Соглашаюсь с рассылкой и принимаю
-                    <a href="./index.html" class="policy__link" aria-label="Условия договора">
-                      Условия договора</a
-                    ></span
+                  <span class="policy__title">Соглашаюсь с рассылкой и принимаю</span>
+                  <a href="./index.html" class="policy__link" aria-label="Условия договора">
+                    Условия договора</a
                   >
                 </label>
 
@@ -251,7 +308,7 @@
         <div class="container">
           <h2 class="section__heading">Наша команда</h2>
           <ul class="team-list list">
-            <li class="team-list_item">
+            <li class="team-list__item">
               <img
                 class="img"
                 src="./images/our-team/imgdemjanenkov.jpg"
@@ -304,7 +361,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list_item">
+            <li class="team-list__item">
               <img
                 class="img"
                 src="./images/our-team/imgrepina.jpg"
@@ -357,7 +414,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list_item">
+            <li class="team-list__item">
               <img
                 class="img"
                 src="./images/our-team/imgtarasov.jpg"
@@ -410,7 +467,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list_item">
+            <li class="team-list__item">
               <img
                 class="img"
                 src="./images/our-team/imgermakov.jpg"
@@ -525,7 +582,7 @@
         <div class="footer__wrapper">
           <!--Контакты-->
           <div class="footer__contacts">
-            <a href="./index.html" class="logo footer__logo"
+            <a href="./index.html" class="logo"
               >Web<span class="logo__secondary logo__secondary--white-theme">Studio</span>
             </a>
 

@@ -8,6 +8,10 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 img {
@@ -82,4 +86,37 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.main-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 480px) {
+    min-width: 200px;
+  }
+
+  min-width: 200px;
+  padding: 10px 30px;
+
+  color: var(--address-color);
+  background-color: var(--accent-color);
+
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--herohover-bcg-color);
+  }
 }

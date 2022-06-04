@@ -10,9 +10,7 @@
     gap: 30px;
   }
 
-  &_item {
-    // width: 450px;
-
+  &__item {
     @media screen and (min-width: 480px) {
       width: 450px;
     }

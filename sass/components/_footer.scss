@@ -9,13 +9,12 @@
   &__container {
     display: flex;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 1199px) {
       flex-direction: column;
       align-items: center;
     }
 
     @media screen and (min-width: 1200px) {
-      flex-direction: row;
       align-items: baseline;
     }
   }
@@ -45,9 +44,9 @@
 .footer__contacts {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
-  @media screen and (min-width: 480px) {
-    align-items: center;
+  @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
 
@@ -73,12 +72,8 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 1199px) {
       align-items: center;
-    }
-
-    @media screen and (min-width: 1200px) {
-      align-items: flex-start;
     }
   }
 
@@ -102,16 +97,10 @@
 
 /* Corporate networks styles */
 .join {
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  @extend %centredColumnFlex;
 
+  @media screen and (max-width: 767px) {
     margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin: 0;
   }
 
   @media screen and (min-width: 1200px) {
@@ -161,24 +150,26 @@
 /* subscribe styles */
 .subscribe-form {
   display: flex;
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     flex-direction: column;
     align-items: center;
   }
 
   @media screen and (min-width: 1200px) {
-    flex-direction: row;
     align-items: flex-end;
   }
 }
 
 .subscribe-field {
   @extend %centredColumnFlex;
-  width: 450px;
+  width: 100%;
 
   @media screen and (min-width: 480px) {
-    margin: 0;
+    width: 450px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -202,12 +193,8 @@
     height: 50px;
     padding: 15px 16px;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 1199px) {
       margin-bottom: 20px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 0;
     }
 
     font-size: 16px;
