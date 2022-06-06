@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Студия веб разработки WebStudio которая занимается десктопными и мобильными приложениям, дизайнерскими решениями, использует современные технологии, планирование, пунктуальность и внимание к деталям."
+    />
     <title>Студия</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,7 +43,7 @@
         <div class="menu-container js-menu-container" id="mobile-menu">
           <button
             type="button"
-            class="mobile-button js-close-menu"
+            class="mobile-button menu-container__button js-close-menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
@@ -265,8 +269,11 @@
           <ul class="work-list list">
             <li class="work-list__item">
               <img
-                class="img"
-                src="./images/what-wedo/imgalgorithm.jpg"
+                srcset="
+                  ./images/what-we-do/algorithm-370.jpg 1x,
+                  ./images/what-we-do/algorithm-740.jpg 2x
+                "
+                src="./images/what-we-do/algorithm-370.jpg 1x"
                 alt="Разработка алгоритмов"
                 width="370"
                 height="294"
@@ -277,8 +284,11 @@
             </li>
             <li class="work-list__item">
               <img
-                class="img"
-                src="./images/what-wedo/imgsmartphone.jpg"
+                srcset="
+                  ./images/what-we-do/smartphone-370.jpg 1x,
+                  ./images/what-we-do/smartphone-740.jpg 2x
+                "
+                src="./images/what-we-do/smartphone-370.jpg"
                 alt="Выбор интерфейсов"
                 width="370"
                 height="294"
@@ -289,8 +299,11 @@
             </li>
             <li class="work-list__item">
               <img
-                class="img"
-                src="./images/what-wedo/imgcolours.jpg"
+                srcset="
+                  ./images/what-we-do/colors-370.jpg 1x,
+                  ./images/what-we-do/colors-740.jpg 2x
+                "
+                src="./images/what-we-do/colors-370.jpg"
                 alt="Дизайнерские решения"
                 width="370"
                 height="294"
@@ -310,11 +323,17 @@
           <ul class="team-list list">
             <li class="team-list__item">
               <img
-                class="img"
-                src="./images/our-team/imgdemjanenkov.jpg"
+                srcset="
+                  ./images/our-team/demjanenkov-270.jpg 270w,
+                  ./images/our-team/demjanenkov-354.jpg 354w,
+                  ./images/our-team/demjanenkov-450.jpg 450w,
+                  ./images/our-team/demjanenkov-540.jpg 540w,
+                  ./images/our-team/demjanenkov-708.jpg 708w,
+                  ./images/our-team/demjanenkov-900.jpg 900w
+                "
+                src="./images/our-team/demjanenkov-270.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480) 450px, 450px"
               />
               <div class="team-card">
                 <h3 class="team-card__title">Игорь Демьяненко</h3>
@@ -363,11 +382,17 @@
             </li>
             <li class="team-list__item">
               <img
-                class="img"
-                src="./images/our-team/imgrepina.jpg"
+                srcset="
+                  ./images/our-team/repina-270.jpg 270w,
+                  ./images/our-team/repina-354.jpg 354w,
+                  ./images/our-team/repina-450.jpg 450w,
+                  ./images/our-team/repina-540.jpg 540w,
+                  ./images/our-team/repina-708.jpg 708w,
+                  ./images/our-team/repina-900.jpg 900w
+                "
+                src="./images/our-team/repina-270.jpg"
                 alt="Ольга Репина"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480) 450px, 450px"
               />
               <div class="team-card">
                 <h3 class="team-card__title">Ольга Репина</h3>
@@ -416,11 +441,17 @@
             </li>
             <li class="team-list__item">
               <img
-                class="img"
-                src="./images/our-team/imgtarasov.jpg"
+                srcset="
+                  ./images/our-team/tarasov-270.jpg 270w,
+                  ./images/our-team/tarasov-354.jpg 354w,
+                  ./images/our-team/tarasov-450.jpg 450w,
+                  ./images/our-team/tarasov-540.jpg 540w,
+                  ./images/our-team/tarasov-708.jpg 708w,
+                  ./images/our-team/tarasov-900.jpg 900w
+                "
+                src="./images/our-team/tarasov-270.jpg"
                 alt="Николай Тарасов"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480) 450px, 450px"
               />
               <div class="team-card">
                 <h3 class="team-card__title">Николай Тарасов</h3>
@@ -469,11 +500,17 @@
             </li>
             <li class="team-list__item">
               <img
-                class="img"
-                src="./images/our-team/imgermakov.jpg"
+                srcset="
+                  ./images/our-team/ermakov-270.jpg 270w,
+                  ./images/our-team/ermakov-354.jpg 354w,
+                  ./images/our-team/ermakov-450.jpg 450w,
+                  ./images/our-team/ermakov-540.jpg 540w,
+                  ./images/our-team/ermakov-708.jpg 708w,
+                  ./images/our-team/ermakov-900.jpg 900w
+                "
+                src="./images/our-team/ermakov-270.jpg"
                 alt="Михаил Ермаков"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480) 450px, 450px"
               />
               <div class="team-card">
                 <h3 class="team-card__title">Михаил Ермаков</h3>
