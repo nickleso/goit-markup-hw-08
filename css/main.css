@@ -952,6 +952,17 @@ img {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1199px) {
+  .feature-list__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .feature-list__description {
   margin-top: 0;
   margin-bottom: 0;
