@@ -668,7 +668,7 @@ img {
   .modal {
     width: 450px;
     position: absolute;
-    top: 70%;
+    top: 100%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
